@@ -4,7 +4,7 @@ metadata:
   name: webapp-deployment
   namespace: dev
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       web: app
@@ -15,5 +15,5 @@ spec:
     spec:
       containers:
         - name: webapp
-          image: r0ckyou/app1
+          image: wil42/playground:v1
     
